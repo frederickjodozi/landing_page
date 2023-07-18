@@ -7,29 +7,38 @@
   <meta name="description" content="A page to present my services">
   <meta name="author" content="Frederick Jodozi">
   <meta name="keywords" content="web development, web developer, junior web developer">
+  <link rel="stylesheet" href="index.css">
 </head>
-<body>
-  <section class="intro">
-    <img src="" alt=""/>
-    <p class="intro__paragraph">Hello, my name is Frederick Jodozi</p>
-    <div class="intro__menu">
-      <p class="intro__menu-item">Certifications</p>
-      <p class="intro__menu-item">Portfolio</p>
-      <p class="intro__menu-item">About</p>
-      <p class="intro__menu-item">Contact</p>
-    </div>
+<body class="page">
+  <section class="home">
+    <header class="header wrapper">
+      <img src="" class="header__logo" alt="The site's logo"/>
+      <ul class="header__menu">
+        <li class="header__menu-item"><a href="#about" class="header__menu-item-link">About</a></li>
+        <li class="header__menu-item"><a href="#certifications" class="header__menu-item-link">Certifications</a></li>
+        <li class="header__menu-item"><a href="#portfolio" class="header__menu-item-link">Portfolio</a></li>
+        <li class="header__menu-item"><a href="#contact" class="header__menu-item-link">Contact</a></li>
+      </ul>
+    </header>
+    <h1 class="home__text">
+      Hello, I'm Frederick Jodozi. <br>
+      I offer Full-Stack Web Development services.
+    </h1>
+    <button class="scroll-button">
+      <img src="./images/downArrow.png" class="scroll-button__arrow" alt="scroll-button arrow"></img>
+    </button>    
   </section>
-  <section class="certifications">
-
+  <section class="about" id="about">
+    <p>About</p>
   </section>
-  <section class="portfolio">
-  
+  <section class="certifications" id="certifications">
+    <p>Certifications</p>
   </section>
-  <section class="about">
-  
+  <section class="portfolio" id="portfolio">
+    <p>Portfolio</p>
   </section>
-  <section class="contact">
-  
+  <section class="contact" id="contact">
+    <p>Contact</p>
   </section>
 </body>
 </html>
