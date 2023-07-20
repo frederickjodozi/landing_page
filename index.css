@@ -16,8 +16,12 @@ body {
   background-color: #000;
 }
 
-.wrapper {
+.wrapper_small {
   margin: 0 5%;
+}
+
+.wrapper_large {
+  margin: 0 10%;
 }
 
 .title {
