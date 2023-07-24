@@ -8,7 +8,7 @@ body {
   /* HIDE SCROLLBAR FOR SAFARI AND FIREFOX*/
 }
 
-/* PAGE STYLING FONTS AND WRAPPERS */
+/* PAGE STYLING, FONTS, FLEX BLOCKS, AND WRAPPERS */
 .page {
   margin: 0;
   padding: 0;
@@ -22,6 +22,26 @@ body {
 
 .wrapper_large {
   margin: 0 10%;
+}
+
+.flex-row {
+  display: flex;
+}
+
+.flex-row_center {
+  display: flex;
+  align-items: center;
+}
+
+.flex-column {
+  display: flex;
+  flex-direction: column;
+}
+
+.flex-column_center {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .title {
@@ -168,4 +188,48 @@ body {
   margin: 0;
   padding: 0;
   color: rgba(255, 255, 255, 1);
+}
+
+.certifications {
+  width: 100%;
+  height: 90vh;
+  padding: 75px 0 0 0;
+  color: #2F4F4F;
+  background-color: #fff;
+}
+
+.certifications__subtitle {
+  margin: 0;
+  padding: 0;
+  color: #2F4F4F;
+}
+
+.certifications__content-wrapper {
+  padding: 175px 0 0 0;
+}
+
+.certifications__text_current {
+  margin: 0 100px 0 0;
+  padding: 0;
+  color: #2F4F4F;
+}
+
+.certifications__list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.certifications__list-item {
+  margin: 0 50px 0 0;
+}
+
+.certifications__text_future {
+  margin: 0;
+  padding: 0;
+  color: #2F4F4F;
+}
+
+.certifications__future {
+  padding: 50px 0 0 0;
 }
