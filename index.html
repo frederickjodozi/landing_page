@@ -9,30 +9,38 @@
   <meta name="keywords" content="web development, web developer, junior web developer">
   <link rel="stylesheet" href="index.css">
 </head>
-<body class="page">
-  <section class="home">
-    <header class="header wrapper_small">
+<body class="page m0 bg-black clr-white">
+  <section class="home flex-column bg-cvr">
+    <header class="header flex-row_sbac pt50 ms5">
       <img src="" class="header__logo" alt="The site's logo"/>
-      <ul class="header__menu">
-        <li class="header__menu-item"><a href="#about" class="header__menu-item-link link">About</a></li>
-        <li class="header__menu-item"><a href="#certifications" class="header__menu-item-link link">Certifications</a></li>
-        <li class="header__menu-item"><a href="#portfolio" class="header__menu-item-link link">Portfolio</a></li>
-        <li class="header__menu-item"><a href="#contact" class="header__menu-item-link link">Contact</a></li>
+      <ul class="ls-none flex-row m0">
+        <li class="header__menu-item">
+          <a href="#about" class="td-none clr-white font-link hvr-opc60 crs-ptr">About</a>
+        </li>
+        <li class="header__menu-item">
+          <a href="#certifications" class="td-none clr-white font-link hvr-opc60 crs-ptr">Certifications</a>
+        </li>
+        <li class="header__menu-item">
+          <a href="#portfolio" class="td-none clr-white font-link hvr-opc60 crs-ptr">Portfolio</a>
+        </li>
+        <li class="header__menu-item">
+          <a href="#contact" class="td-none clr-white font-link hvr-opc60 crs-ptr">Contact</a>
+        </li>
       </ul>
     </header>
-    <h1 class="home__title title">
+    <h1 class="font-title clr-white ta-ctr pt250 m0">
       Hello, I'm Frederick Jodozi. <br>
       I offer Full-Stack Web Development services.
     </h1>
-    <button class="scroll-button">
-      <img src="./images/downArrow.png" class="scroll-button__arrow" alt="scroll-button arrow"></img>
+    <button class="scroll-button flex-column_jcac shp-circle bdr-white bg-transparent">
+      <img src="./images/downArrow.png" class="scroll-button__arrow crs-ptr" alt="scroll-button arrow"></img>
     </button>    
   </section>
-  <section class="about" id="about">
-    <h2 class='about__subtitle subtitle'>About</h2>
-    <div class="about__content-wrapper wrapper_large">
-      <img src="images/author.jpg" class="about__image" alt="The author"></img>
-      <p class="about__text text">
+  <section class="about flex-column_ac bg-black" id="about">
+    <h2 class="font-subtitle clr-white pt100 m0">About</h2>
+    <div class="flex-row_sbac pt150 ms10">
+      <img src="images/author.jpg" class="about__image shp-circle" alt="The author"></img>
+      <p class="font-text clr-white m0">
         Lorem ipsum dolor sit amet, consectetur adipiscing elit,
         sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
         Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
@@ -41,44 +49,45 @@
       </p>
     </div>
   </section>
-  <section class="certifications flex-column_center" id="certifications">
-    <h2 class='certifications__subtitle subtitle'>Certifications</h2>
-    <div class="certifications__content-wrapper flex-row">
-      <h3 class="certifications__text_current text">Current certifications:</h3>
-        <ul class="certifications__list flex-row_center">
+  <section class="certifications flex-column_sbac bg-white" id="certifications">
+    <h2 class='font-subtitle clr-grey pt100 m0'>Certifications</h2>
+      <div class="flex-row_ac">
+        <h3 class="certifications__text_current font-text clr-grey">Current certifications:</h3>
+        <ul class="ls-none flex-row_jac m0">
           <li class="certifications__list-item">
             <img src="" class="certifications__current" alt="Tripleten Full-Stack certification">
           </li>
+        </ul>
       </div>
-    </div>
-    <div class="certifications__content-wrapper flex-column">
-      <h3 class="certifications__text_future text">Working on:</h3>
-      <ul class="certifications__list flex-row_center">
-        <li class="certifications__list-item">
-          <img src="" class="certifications__future" alt="Google UX Design certification">
-        </li>
-    </div>
+      <div class="flex-column mb100">
+        <h3 class="font-text clr-grey ta-ctr p0 m0">Working on:</h3>
+        <ul class="ls-none flex-row_jac m0">
+          <li class="certifications__list-item">
+            <img src="" class="pt50" alt="Google UX Design certification">
+          </li>
+        </ul>
+      </div>
   </section>
-  <section class="portfolio flex-column_center wrapper_small" id="portfolio">
-    <h2 class="portfolio__subtitle subtitle">Portfolio</h2>
-    <ul class="portfolio__grid">
-      <li class="portfolio-item">
-        <img src="https://via.placeholder.com/300" alt="Project 1">
+  <section class="portfolio flex-column_ac ms5 bg-black clr-white" id="portfolio">
+    <h2 class="font-subtitle clr-white pt100 m0">Portfolio</h2>
+    <ul class="portfolio__grid pt150 mb100">
+      <li>
+        <img src="https://via.placeholder.com/300" class="portfolio-item" alt="Project 1">
       </li>
-      <li class="portfolio-item">
-        <img src="https://via.placeholder.com/300" alt="Project 2">
+      <li>
+        <img src="https://via.placeholder.com/300" class="portfolio-item" alt="Project 2">
       </li>
-      <li class="portfolio-item">
-        <img src="https://via.placeholder.com/300" alt="Project 3">
+      <li>
+        <img src="https://via.placeholder.com/300" class="portfolio-item" alt="Project 3">
       </li>
-      <li class="portfolio-item">
-        <img src="https://via.placeholder.com/300" alt="Project 4">
+      <li>
+        <img src="https://via.placeholder.com/300" class="portfolio-item" alt="Project 4">
       </li>
-      <li class="portfolio-item">
-        <img src="https://via.placeholder.com/300" alt="Project 5">
+      <li>
+        <img src="https://via.placeholder.com/300" class="portfolio-item" alt="Project 5">
       </li>
-      <li class="portfolio-item">
-        <img src="https://via.placeholder.com/300" alt="Project 6">
+      <li>
+        <img src="https://via.placeholder.com/300" class="portfolio-item" alt="Project 6">
       </li>
     </ul>
   </section>
