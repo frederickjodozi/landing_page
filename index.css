@@ -272,7 +272,7 @@ body {
 /* CONTACT SECTION */
 .contact {
   min-height: 40vh;
-  /* margin-bottom: 40px; */
+  background-image: url(./images/contact__background.jpg);
 }
 
 .contact__list {
