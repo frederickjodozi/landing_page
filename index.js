@@ -1,11 +1,31 @@
 const sections = document.querySelectorAll('section');
-const downScrollButton = document.querySelector('#scroll-button');
+const upScrollButton = document.querySelector('#scroll-up-button');
+const downScrollButton = document.querySelector('#scroll-down-button');
 let currentSectionIndex = 0;
+
+const handleScrollUp = () => {
+  if (currentSectionIndex !== 0) {
+    sections[currentSectionIndex - 1].scrollIntoView({ behavior: 'smooth' });
+    currentSectionIndex--;
+  }
+
+  if (currentSectionIndex === 0) {
+    upScrollButton.classList.add('no-display');
+  }
+
+  if (currentSectionIndex !== sections.length - 1) {
+    downScrollButton.classList.remove('no-display');
+  }
+}
 
 const handleScrollDown = () => {
   if (currentSectionIndex < sections.length -1) {
     sections[currentSectionIndex + 1].scrollIntoView({ behavior: 'smooth' });
     currentSectionIndex++;
+  }
+
+  if (currentSectionIndex !== 0) {
+    upScrollButton.classList.remove('no-display');
   }
 
   if (currentSectionIndex === sections.length - 1) {
@@ -18,7 +38,7 @@ document.addEventListener('wheel', (event) => {
     handleScrollDown();
     console.log('Scrolled down');
   } else if (event.deltaY < 0) {
-    // handleScrollUp();
+    handleScrollUp();
     console.log('Scrolled up');
   }
 });
@@ -26,13 +46,14 @@ document.addEventListener('wheel', (event) => {
 document.addEventListener('keydown', (event) => {
   if (event.key === ' ' || event.key === 'ArrowDown') {
     event.preventDefault();
-    console.log(event.key)
     handleScrollDown();
   }
 
   if (event.key === 'ArrowUp') {
-    // handleScrollUp();
+    event.preventDefault();
+    handleScrollUp();
   }
 });
 
+upScrollButton.addEventListener("click", handleScrollUp);
 downScrollButton.addEventListener("click", handleScrollDown);
