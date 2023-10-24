@@ -50,6 +50,13 @@ body {
   margin-bottom: 100px;
 }
 
+/* DISPLAY BLOCKS */
+.no-display {
+  display: none;
+  visibility: hidden;
+  pointer-events: none;    
+}
+
 /* FLEX BLOCKS */
 .flex-row {
   display: flex;
@@ -222,6 +229,7 @@ body {
   bottom: 100px;
   width: 60px;
   height: 60px;
+  transition: transform 1s ease-in;
 }
 
 .scroll-button__arrow {
