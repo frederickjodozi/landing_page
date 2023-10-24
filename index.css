@@ -6,6 +6,7 @@ body::-webkit-scrollbar {
 body {
   -ms-overflow-style: none; /* Legacy IE and Edge */
   /* HIDE SCROLLBAR FOR SAFARI AND FIREFOX*/
+  user-select: none;
 }
 
 /* PADDING BLOCKS */
