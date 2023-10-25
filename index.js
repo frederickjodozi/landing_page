@@ -1,4 +1,5 @@
 const sections = document.querySelectorAll('section');
+const navigationLinks = document.querySelectorAll('nav > ul > li > button');
 const upScrollButton = document.querySelector('#scroll-up-button');
 const downScrollButton = document.querySelector('#scroll-down-button');
 let currentSectionIndex = 0;
@@ -53,6 +54,15 @@ document.addEventListener('keydown', (event) => {
     event.preventDefault();
     handleScrollUp();
   }
+});
+
+navigationLinks.forEach((link) => {
+  link.addEventListener('click', (event) => {
+    sections[event.target.id].scrollIntoView({ behavior: 'smooth' });
+    currentSectionIndex = parseInt(event.target.id, 10);
+
+    upScrollButton.classList.remove('no-display');
+  });
 });
 
 upScrollButton.addEventListener("click", handleScrollUp);

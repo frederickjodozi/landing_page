@@ -119,6 +119,10 @@ body {
 }
 
 /* BACKGROUND BLOCKS */
+.no-bg {
+  background: none;
+}
+
 .bg-black {
   background-color: #000;
 }
@@ -197,6 +201,10 @@ body {
 }
 
 /* SHAPE AND BORDER BLOCKS */
+.no-bdr {
+  border:none;
+}
+
 .shp-circle {
   border-radius: 50%;
 }
