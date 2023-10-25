@@ -54,7 +54,7 @@ body {
 /* DISPLAY BLOCKS */
 .no-display {
   display: none;
-  visibility: hidden;
+  opacity: 0;
   pointer-events: none;    
 }
 
@@ -240,7 +240,7 @@ body {
 .scroll-button {
   width: 50px;
   height: 50px;
-  transition: transform 1s ease-in;
+  transition: opacity 0.5s ease-in;
 }
 
 .scroll-button__arrow {
