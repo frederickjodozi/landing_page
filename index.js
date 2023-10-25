@@ -34,14 +34,14 @@ const handleScrollDown = () => {
 }
 
 document.addEventListener('wheel', (event) => {
+  event.preventDefault();
+
   if (event.deltaY > 0) {
     handleScrollDown();
-    console.log('Scrolled down');
   } else if (event.deltaY < 0) {
     handleScrollUp();
-    console.log('Scrolled up');
   }
-});
+}, { passive: false });
 
 document.addEventListener('keydown', (event) => {
   if (event.key === ' ' || event.key === 'ArrowDown') {
