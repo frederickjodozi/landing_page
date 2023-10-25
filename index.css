@@ -195,6 +195,14 @@ body {
   text-decoration: none;
 }
 
+.ts-1pbl {
+  text-shadow: 1px 1px 1px #000;
+}
+
+.ts-2pbl {
+  text-shadow: 2px 2px 2px #000;
+}
+
 /* LIST BLOCKS */
 .ls-none {
   list-style: none;
@@ -226,6 +234,7 @@ body {
 .home {
   height: 100vh;
   background-image: url(./images/home__background.jpg);
+  background-position: center 15%;
 }
 
 .header {
